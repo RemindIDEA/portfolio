@@ -114,11 +114,18 @@ body { width:100%; height:100%; background:#ffffff;}
 
 /* <!-- 카카오카드 안내 --> */
 #choiceCard{box-sizing:border-box;width:100%; height:750px; padding:30px; 
-    display: flex; justify-content: center;
-    background-color: aqua; position:relative;}
-#choiceCard #choiceCard_Text{width: 60%; height:150px; position: absolute; top:50px; background-color: chocolate;}
+    display: flex; justify-content: center; position:relative;}
+/* 카드슬라이드쇼 텍스트 */
+#choiceCard #choiceCard_Text{width: 60%; height:150px; position: absolute; top:50px; }
+#choiceCard_Text h2 {text-align: center; font-size: 40px; letter-spacing: -3px;}
+#choiceCard_Text p{text-align: center;}
+
 #choiceCard #choiceCard_Button{width: 30%; height:70px; position: absolute; top:200px; background-color: chocolate;}
-#choiceCard #choiceCard_img{width: 80%; height:430px; position: absolute; top:270px; background-color: chocolate;}
+/* 카드 슬라이드쇼 */
+#choiceCard #choiceCard_img{width: 80%; height:430px; position: absolute; top:280px; }
+#choiceCard_img .carousel-inner{ display: flex; justify-content: center; }
+#choiceCard_img .carousel-inner img{width:200px; height: 400px;}
+
 
 /* 회사 소개부분 이미지와 텍스트로 설정 */
 #adKakaoBank{box-sizing:border-box;width:100%; height:650px;  
@@ -133,9 +140,20 @@ body { width:100%; height:100%; background:#ffffff;}
 #adKakaoBank #pic3{width: 20%; height:100px; position:absolute; top:450px; left:70%;}    
 
 /* footer영역 설정 */
-#footer{box-sizing:border-box; width:100%; height:170px; padding-left:5%; padding-right:5%;  
+#footer{ box-sizing:border-box; width:100%; height:230px; padding-left:5%; padding-right:5%;  
     /* display: flex; justify-content: center; */ 
-    background-color: #eeeeee; position:relative;}
-#footer_menu li{display: inline-block; width:210px; font-size:10px; }
+    background-color: #eeeeee;}
+/* 풋터 메뉴 블럭화해서 나열 */
+#footer_menu li{display: inline-block; position:relative; width:210px; font-size:10px; }
 #footer_menu a{color:black }
-#footer_logo{color:black;}
+/* 로고 사이즈 및 위치 조정 */
+#footer_logo{ width:90%; height:100px; position: relative;}
+#footer_logo #logo1{display:inline-block; padding: 0px 15px; padding-top:10px; position: relative;}
+#logo1 img{width:42px; height:42px; padding-top:10px;}
+#footer_logo #logo2{display:inline-block; padding: 10px 15px; position: relative;}
+#logo1 span{font-size:20px;  }
+#logo2 span{font-size:20px; }
+#logo2 img{width:42px; height:42px;padding-top:10px;}
+#footer_sns{display: inline-block; float:right;}
+#sns li{display: inline-block; width:42px; height:42px;padding:5px 15px;}
+#sns a{font-size:40px;}

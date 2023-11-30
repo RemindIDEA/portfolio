@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글로벌아이티인재개발원</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        
+           // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+        
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+              });
+            } // End if
+          });
+        })
+    </script>
+    <style>
+        .jumbotron{ 
+            background-color: #f4511e; color: #ffffff;
+            padding : 100px 25px; 
+        }
+        .bg-grey{background-color: #f6f6f6;}
+        .container-fluid{
+            padding: 60px 50px;
+        }
+        .logo{
+            font-size: 200px;
+        }
+        @media screen and (max-width : 768px) {
+            .col-sm-4{
+                text-align: center;
+                margin : 25px 0px; 
+            }
+            .col-sm-8{
+                text-align: center;
+                margin : 25px 0px; 
+            }
+        }
+        .navbar {
+            margin-bottom: 0;
+            background-color: #f4511e;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+        }
+
+        .navbar li a, .navbar .navbar-brand {
+            color: #fff !important;
+        }
+
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #f4511e !important;
+            background-color: #fff !important;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+
+    </style>
+
+</head>
+<body id="myPage">
+    <!-- navigation------------------------------------------ -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#myPage">
+                    <img src="img/top_logo.png" alt="로고이미지" style="width:100px;">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">교육센터소개</a></li>
+                    <li><a href="#vision" data-toggle="collapse" data-target=".navbar-collapse.in">교육센터비젼</a></li>
+                    <li><a href="#curriculumn" data-toggle="collapse" data-target=".navbar-collapse.in">교육과정</a></li>
+                    <li><a href="#join" data-toggle="collapse" data-target=".navbar-collapse.in">교육과정신청</a></li>
+                    <li><a href="#roadmap" data-toggle="collapse" data-target=".navbar-collapse.in">오시는길</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- navigation------------------------------------------ -->
+
+    <!-- 타이틀--------------------------------------------------------------->
+    <div class="jumbotron text-center">
+        <h1>글로벌아이티인재개발원</h1>
+        <p>디지털 핵심 인재 양성전문 교육기관</p>
+        <form class="form-inline">
+            <div class="input-group">
+              <input type="text" class="form-control" size="50" placeholder="검색어를 입력하세요" required>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-danger">Search</button>
+              </div>
+            </div>
+          </form>
+    </div>
+    <!-- 타이틀. end --------------------------------------------------------->
+    
+    <!-- 교육센터소개------------------------------------------------------ -->
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>교육센터소개</h2>
+                <h4>- 4차산업혁명을 준비하는 IT전문인력 양성</h4>
+                <p>글로벌 아이티 인재개발원은 정부지원IT 전문 교육기관입니다.</p>
+            </div>
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-signal logo"></span>
+            </div>
+        </div>
+    </div>
+    <!-- 교육센터소개.end ----------------------------------------------->
+
+    <!-- 교육센터비전------------------------------------------------------ -->
+    <div id="vision" class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-4">
+                <span class="glyphicon glyphicon-globe logo"></span>
+            </div>
+            <div class="col-sm-8">
+                <h2>교육센터비젼</h2>
+                <h4>- 4대핵심요소(Core Value)를 갖춘 인재 양성 </h4>
+                <p>
+                    <ol>
+                        BEST
+                        <li>Believe : 풍부한 노하우의 IT교육 운영과 경험</li>
+                        <li>Expert : 전문개발자 경력의 강사진 구성</li>
+                        <li>Stability : 다년간 축척된 교육노하우와 채용약정기업 보유</li>
+                        <li>Tech-quality : 최신 트렌드의 교육과정 개발</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- 교육센터비전.end ----------------------------------------------->
+
+    <!-- 교육과정 소개 ----------------------------------------------- -->
+    <div id="curriculumn" class="container-fluid">
+        <h2 class="text-center">교육과정</h2>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="img/java.jpg" alt="java">
+                <p><strong>자바(JAVA)학과</strong></p>
+                <p>개강안내</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="img/kdigital.jpg" alt="kdigital">
+                <p><strong>K-디지털학과</strong></p>
+                <p>개강안내</p>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="img/network.jpg" alt="network" >
+                <p><strong>네트워크/보안학과</strong></p>
+                <p>개강안내</p>
+            </div>
+        </div>
+    </div>
+    <!-- 교육과정소개.end------------------- -->
+
+    <!-- 교육과정신청 -------------------------------------------------------->
+    <div id="join" class="container-fluid bg-grey">
+        <h2 class="text-center">교육과정신청</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p>
+                    <span class="glyphicon glyphicon-map-marker"></span> 
+                    seoul, Korea
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-phone"></span> 
+                    tel : +82 02-6020-0055
+                </p>
+                <p>
+                    <span class="glyphicon glyphicon-phone"></span>
+                    fax : +82 02-3285-0012
+                </p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" type="text" name="name" placeholder="이름"/>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" type="text" name="phone" placeholder="연락처"/>
+                    </div>
+                    <div class="col-sm-12">
+                        <select class="form-control form-group" name="curriculumn">
+                            <option value="">[과정선택]</option>
+                            <option value="국비지원무료과정">국비지원무료과정</option>
+                            <option value="단과과정">단과과정</option>
+                            <option value="차세대핵심인재양성">차세대핵심인재양성</option>
+                            <option value="디지털핵심실무인재양성">디지털핵심실무인재양성</option>
+                        </select>
+                    </div>
+                </div>
+                <div><textarea class="form-control form-group" name="question" placeholder="문의사항"></textarea></div>
+                <button class="btn btn-default pull-right">등록</button>
+            </div>
+        </div>    
+    </div>
+    <!-- 교육과정신청.end -->
+
+    <!-- 오시는길----------------------------------------------------------------- -->
+    <div id="roadmap" class="container-fluid" style="padding:60px 0%">
+        <h2  class="text-center">오시는길</h2>
+        <div id="map" style="width:100%;height:350px;"></div>
+
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4770be2addc50cf609abb102bfdc423c"></script>
+        <script>
+            var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                mapOption = { 
+                    center: new kakao.maps.LatLng(37.4809094,126.952095), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            // 마커가 표시될 위치입니다 
+            var markerPosition  = new kakao.maps.LatLng(37.4809094,126.952095); 
+
+            // 마커를 생성합니다
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+
+            // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+            // marker.setMap(null);    
+        </script>
+    </div>
+    <!-- 오시는길.end------ -->
+
+    <!-- footer-------------------------------------------------------- -->
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>회사명 : (주)글로벌 아이티(IT) 인재개발원 사업자등록번호 : 119-81-85582 대표자명 : 이수일</p>
+        <p>서울시 관악구 남부순환로 1820,에그엘로우14층 전화번호 : 02-6020-0055 팩스번호 : 02-3285-0012</p>
+        <p>&copy 2017 (주)글로벌아이티정보기술. ALL RIGHTS RESERVED.</p>
+    </footer>
+    <!-- footer.end------------------------------------------------------- -->
+</body>
+</html>

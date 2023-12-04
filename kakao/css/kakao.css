@@ -38,19 +38,19 @@ body { width:100%; height:100%; background:#ffffff;}
 /* 모바일로 볼때 */
 @media screen and (max-width:767px) {
     /* mobileAccount 부분 전체 영역설정 */
-    #mobileAccount{box-sizing:border-box;width:100%; height:1300px; padding:30px; }
+    #mobileAccount{box-sizing:border-box;width:100%; height:1000px; padding:30px; }
 
     /* 이미지 영역 */
     #mobileAccount #mobileAccount_img{width:100%; height:50%; display: flex; justify-content: center;}
     #mobileAccount_img #mobileImg{width:75%; height:100%; }
 
     #mobileAccount #mobileAccount_text{width:100%; height:30%; position: relative; }
-    #mobileAccount_text #mobileText{ width:100%; position:absolute; top: 70px; left:10%; }
+    #mobileAccount_text #mobileText{ width:80%; position:absolute; top: 70px; left:10%; }
 
     #mobileAccount #mobileAccount_button{width:100%; height:10%; position:relative; }
-    #mobileText h1{font-size: 40px;}
+    #mobileText h1{font-size: 30px;}
     #mobileAccount_button button{padding-right:20px; width:300px; height: 50px; font-size:15px; 
-        position: absolute; top:-10px; left:15%;
+        position: absolute; top:0px; left:15%;
         background: #F6F6F6; border:0; border-color: #F6F6F6;}
     #mobileAccount_button button>a{color:black; }
 
@@ -62,15 +62,16 @@ body { width:100%; height:100%; background:#ffffff;}
     #depositAccount_img #depositImg{width:80%; height:100%; position: absolute; left:10%;}
     /* 텍스트영역 */
     #depositAccount #depositAccount_text{width:100%; height:25%; position: relative; }
-    #depositAccount_text #deposit_text{ width:100%; position:absolute; left: 10%; }
+    #depositAccount_text #deposit_text{ width:100%; position:absolute; left: 10%; top:50px;}
+    #deposit_text h1{font-size:30px;}
     /* 버튼영역부분 */
     #depositAccount #depositAccount_button{width:100%; height:25%; position: relative; }
     #depositAccount_button_button{width: 100%; height:50px;}
     #depositAccount_button #depositAccount_button_img{width:100%; height:150px; padding-top:50px;}
-    #depositAccount_button_img img{width:90%; height:150px; position: absolute; top:130px; left:30px;}
+    #depositAccount_button_img img{width:90%; height:150px; position: absolute; top:100px; left:30px;}
     #depositAccount_button button{padding-right:20px; width:200px; height: 50px; font-size:15px; background: #F6F6F6; border:0; border-color: #F6F6F6; }
-    #depositAccount_button_button #regul{width:35%; position:absolute; top:30px; left: 10%; }
-    #depositAccount_button_button #free{width:35%; position:absolute; top:30px; left: 50%;}
+    #depositAccount_button_button #regul{width:35%; position:absolute; top:10px; left: 10%; }
+    #depositAccount_button_button #free{width:35%; position:absolute; top:10px; left: 50%;}
     #depositAccount_button_button a{color: black;}    
 
 
@@ -81,7 +82,8 @@ body { width:100%; height:100%; background:#ffffff;}
     #groupAccount_img #groupAccountImg{width:75%; height:100%; position: absolute; left:10%;}
     /* 모임통장 텍스트영역 */
     #groupAccount #groupAccount_text{width:100%; height:25%; position: relative; }
-    #groupAccount_text #groupText{ width:100%; position:absolute; top: 30px; left:10%;}
+    #groupAccount_text #groupText{ width:82%; position:absolute; top: 30px; left:10%;}
+    #groupText h1{font-size:30px;}
     /* 모임통장 버튼영역 */
     #groupAccount #groupAccount_button{width:100%; height:20%;  position:relative; }
     #groupAccount_button_button{padding-right:20px; width:300px; height: 50px; font-size:15px; 
@@ -95,44 +97,45 @@ body { width:100%; height:100%; background:#ffffff;}
     #remittAbroad{box-sizing:border-box;width:100%; height:1200px; padding:30px; padding-left: 20%; position:relative;}
     /* 이미지 영역 */
     #remittAbroad #remittAbroad_img{width:100%; height:60%;  display: flex; justify-content:center; position: relative; }
-    #remittAbroad_img #remittImg{width:100%; height:100%; position: absolute; top: 30px; left:-10%; } 
+    #remittAbroad_img #remittImg{width:100%; height:100%; position: absolute; top: -50px; left:-10%; } 
     /* 텍스트 영역 */
     #remittAbroad #remittAbroad_text{width:100%; height:25%;  float:left; }
     #remittAbroad_text #remittText{width:100%; position:absolute;left:15%;}
+    #remittText h1{font-size: 30px;}
     /* 버튼영역 */
-    #remittAbroad #remittAbroad_button{width:100%; height:15%; position: relative; }
+    #remittAbroad #remittAbroad_button{width:70%; height:15%; position: relative; }
     #remittButton{padding-right:20px; width:300px; height: 50px; font-size:15px; background: #F6F6F6; border:0; border-color: #F6F6F6;
-        position: absolute; top: 10%; 
+        position: absolute; top: -30%; left: -5%;
     }
     #remittButton>a{color:black; }
 
     /* <!-- 전월세 보증금 / 애니메이션 효과 들어가기 --> */
-/* 영역설정 및 배경 애니메이션 효과 */
-#depositOfHouse{  width:100%; height:1000px; position:relative; }
-#depositOfHouse #depositOfHouse_bg{ width:100%; height:100%; position:relative; 
+/*  영역설정 및 배경 애니메이션 효과 */
+    #depositOfHouse{  width:100%; height:1000px; position:relative; }
+    #depositOfHouse #depositOfHouse_bg{ width:100%; height:100%; position:relative; 
     background-color: #333b58;
     animation: ani linear 10s infinite;
     /* 자식 영역들 중앙배치 */
     display: flex; justify-content: center;}
 
     /* 해모양 */
-#depositOfHouse_bg .moon_original {
+    #depositOfHouse_bg .moon_original {
         position: absolute; top: 100px; right: 50px; width: 110px;
         height: 110px; border-radius: 55px;
         background-color: #ffdc00;
         animation: ani2 linear 10s infinite;
 }
-/* 애니메이션 정의 */
-@keyframes ani {
-    0%   {background-color: #559cde;  }
-    25%   {background-color:  #333b58; }
-    100% {background-color: #333b58; }
-}
-@keyframes ani2 {
-    0%   {background-color:#ffdc00;  }
-    50%{background-color: gray; }
-    100% {background-color: gray; }
-}
+    /* 애니메이션 정의 */
+    @keyframes ani {
+        0%   {background-color: #559cde;  }
+        25%   {background-color:  #333b58; }
+        100% {background-color: #333b58; }
+    }
+    @keyframes ani2 {
+        0%   {background-color:#ffdc00;  }
+        50%{background-color: gray; }
+        100% {background-color: gray; }
+    }
 
     /* 자식 영역들 개체들 */
     #depositOfHouse #depositOfHouse_text{width: 80%; height:150px; position: absolute; top:120px; }
@@ -143,7 +146,7 @@ body { width:100%; height:100%; background:#ffffff;}
     #depositOfHouse #depositOfHouse_img{width: 80%; height:600px; position: absolute; top:390px; left:20%;}
     #depositOfHouse_img #img{width: 75%; height:100%;}
     /* 대출영역 버튼부분 */
-    #depositOfHouse #depositOfHouse_button{width: 70%; height:50px; position: absolute; top:380px; }
+    #depositOfHouse #depositOfHouse_button{width: 80%; height:50px; position: absolute; top:380px; }
     #depositOfHouse_button #마이너스{display: inline-block; width: 22%; height: 40px; position:absolute; top:5px; left:3%;  background-color: #454D67;}
     #depositOfHouse_button #신용대출{display: inline-block; width:22%; height: 40px; position:absolute; top:5px; left:28%; background-color: #454D67;}
     #depositOfHouse_button #개인사업자{display: inline-block; width:22%; height: 40px; position:absolute; top:5px; left:53%;  background-color:#454D67;}
@@ -160,14 +163,14 @@ body { width:100%; height:100%; background:#ffffff;}
     #choiceCard_Text p{text-align: center;}
 
     /* 카카오 카드 버튼 */
-    #choiceCard #choiceCard_Button{width: 30%; height:70px; position: absolute; top:260px; left:25%; }
+    #choiceCard #choiceCard_Button{width: 30%; height:70px; position: absolute; top:260px; left:15%; }
     #choiceCard_Button #choiceCard_Button_button{
     padding-right:20px; width:300px; height: 50px; font-size:15px; background: #F6F6F6; border:0; border-color: #F6F6F6;
     position: absolute; top:40px; }
 
     /* 카드 슬라이드쇼 */
-    #choiceCard #choiceCard_img{width: 80%; height:430px; position: absolute; top:400px; left:-5%;  }
-    #choiceCard_img .carousel-inner{ display: flex; justify-content: center; }
+    #choiceCard #choiceCard_img{width: 80%; height:430px; position: absolute; top:380px;}
+    #choiceCard_img {display: flex; justify-content: center;}
     #choiceCard_img .carousel-inner img{width:200px; height: 400px;}
 
     /* 회사 소개부분 이미지와 텍스트로 설정 */
@@ -175,19 +178,19 @@ body { width:100%; height:100%; background:#ffffff;}
     display: flex; justify-content: center;
     position:relative;}
     /*첫번째 이미지영역*/
-    #adKakaoBank #adpic{width:80%; height:300px; position:absolute; top:120px; }
+    #adKakaoBank #adpic{width:80%; height:200px; position:absolute; top:120px; }
     #adpic img{width:100%; height: 90%;}
     /* 첫번째 문구영역 */
-    #adKakaoBank #pic1{width: 20%; height:100px;  position:absolute; top:400px; left:10%;}    
-    #adKakaoBank #pic2{width: 20%; height:100px; position:absolute; top:400px; left:30%;}    
-    #adKakaoBank #pic3{width: 20%; height:100px; position:absolute; top:400px; left:70%;}    
+    #adKakaoBank #pic1{width: 25%; height:100px;  position:absolute; top:350px; left:5%;}    
+    #adKakaoBank #pic2{width: 25%; height:100px; position:absolute; top:350px; left:30%;}    
+    #adKakaoBank #pic3{width: 25%; height:100px; position:absolute; top:350px; left:70%;}    
        
     /* footer영역 설정 */
-    #footer{ box-sizing:border-box; width:100%; height:400px; padding-left:5%; padding-right:5%;  
+    #footer{ box-sizing:border-box; width:100%; height:350px; padding-left:5%; padding-right:5%;  
     /* display: flex; justify-content: center; */ 
     background-color: #eeeeee;}
     /* 풋터 메뉴 블럭화해서 나열 */
-    #footer_menu li{display: inline-block; position:relative; width:210px; font-size:10px; }
+    #footer_menu li{display: inline-block; position:relative;  font-size:10px; }
     #footer_menu a{color:black }
     /* 로고 사이즈 및 위치 조정 */
     #footer_logo{ width:90%; height:100px; position: relative;}

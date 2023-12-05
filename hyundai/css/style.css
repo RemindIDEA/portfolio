@@ -20,7 +20,6 @@ article h1:hover{line-height: 425px; font-size: 50px; color:white; background-co
     #demo2{display: block;}
     #demo2{display:block; height:700px; }
     #demo2 .carousel-inner{display: block; height:700px; position: relative;}
-    #demo2 video{height:100%;}
 
     .caption{ position: absolute; left: 50px; bottom:650px; z-index:100000; color:white;}
 

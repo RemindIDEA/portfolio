@@ -4,169 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>현대자동차 글로벌 공식 웹사이트</title>
-    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Make the image fully responsive */
+        
+    </style>
 
-    <script>
-        $(document).ready(function(){
-            $('.navbar-nav a').on('click', function(){
-                var width=$(window).width();
-                if(width<=767){
-                    //$('.btn-navbar').click(); //bootstrap 2.x
-                    //$('.navbar-toggle').click(); //bootstrap 3.x 
-                    $('.navbar-toggler').click(); //bootstrap 4.x  
-                       
-                   }
-                }
-            );
-        });
-    </script>
 </head>
 <body>
-    <!-- navigation -------------------------------------------------------->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">
-            <img src="img/logo.png" alt="로고이미지" width="200">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon">   
-                <i class="fa-solid fa-bars" style="color:gray; font-size:28px;"></i>               
-            </span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.in">브랜드 저널</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.in">모델</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" data-toggle="collapse" data-target=".navbar-collapse.in">회사소개</a>
-            </li>    
-          </ul>
-        </div>  
-      </nav>
-    <!-- navigation.end-->
+    <!-- 네비게이션------------------------------------------------------------ -->
+        <!-- navigation------------------------------------------ -->
+        <nav class="navbar navbar-expand-md bg-dark navbar-white">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" style="width:155px; height:22px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">브랜드 저널</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">모델</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">회사소개</a>
+                    </li>    
+                </ul>
+            </div>  
+        </nav>
+    <!-- navigation------------------------------------------ -->
+    <!-- 네비게이션.end--------- -->
 
-    <!-- 캐러셀 pc -------------------------------------------------------->
-    <div id="demo" class="carousel slide" data-ride="carousel">
+    <!-- 캐러셀 pc ----------------------------------------------------------------->
+
+    <div id="demo" class="carousel slide" data-ride="carousel">  
         <!-- Indicators -->
         <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
         </ul>
       
+        
+        
         <!-- The slideshow -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video loop autoplay muted playsinline>
-                <source src="img/santafe-pc.mp4" type="video/mp4">                
-            </video>
-            <h2 class="caption">   
-                <span class="category ">여행</span>
-                <p>Open for More: 또 다른 일상의 경험을 열다, 디 올 뉴 싼타페 (The all-new SANTA FE)</p>
-            </h2>
-          </div>
-          <div class="carousel-item">
-            <video loop autoplay muted playsinline>
-                <source src="img/pony-pc.mp4" type="video/mp4">
-            </video>
-            <h2 class="caption">   
-                <span class="category ">헤리티지 스토리</span>
-                <p>현대 리유니온이 공개한 포니 쿠페 콘셉트 복원 프로젝트</p>
-            </h2>
-          </div>
-          <div class="carousel-item">
-            <video loop autoplay muted playsinline>
-                <source src="img/worldcup-pc.mp4" type="video/mp4">
-            </video>
-            <h2 class="caption">   
-                <span class="category ">스포츠</span>
-                <p>여자 축구의 역사와 2023 FIFA 여자 월드컵™</p>
-            </h2>
-          </div>
+            <div class="carousel-item active">
+                <video loop autoplay muted>
+                    <source src="img/santafe-pc.mp4" type="video/mp4">
+                   
+                </video>
+                <div class="caption">
+                    <span class="category ">여행</span>
+                    <p>Open for More: 또 다른 일상의 경험을 열다, 디 올 뉴 싼타페 (The all-new SANTA FE)</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video loop autoplay muted>
+                    <source src="img/pony-pc.mp4" type="video/mp4">
+                    
+                </video>
+                <div class="caption">
+                    <span class="category">헤리티지 스토리</span>
+                    <p>현대 리유니온이 공개한 포니 쿠페 콘셉트 복원 프로젝트</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video loop autoplay muted>
+                    <source src="img/worldcup-pc.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <span class="category ">스포츠</span>
+                    <p>여자 축구의 역사와 2023 FIFA 여자 월드컵™</p>
+                </div>
+            </div>
         </div>
-      
+        
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+            <span class="carousel-control-prev-icon"></span>
         </a>
         <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon"></span>
         </a>
-      
     </div>
-    <!-- 캐러셀 pc.end -->
+    <!-- 캐러셀pc.end -------------->
 
-    <!-- 캐러셀 mobile -------------------------------------------------------->
-    <div id="demo2" class="carousel slide" data-ride="carousel">
+    <!-- 캐러셀 m ----------------------------------------------------------------->
+    <div id="demo2" class="carousel slide" data-ride="carousel">  
         <!-- Indicators -->
         <ul class="carousel-indicators">
-          <li data-target="#demo2" data-slide-to="0" class="active"></li>
-          <li data-target="#demo2" data-slide-to="1"></li>
-          <li data-target="#demo2" data-slide-to="2"></li>
+            <li data-target="#demo2" data-slide-to="0" class="active"></li>
+            <li data-target="#demo2" data-slide-to="1"></li>
+            <li data-target="#demo2" data-slide-to="2"></li>
         </ul>
-      
+        
         <!-- The slideshow -->
-        <div class="carousel-inner" style="background: red;">
-          <div class="carousel-item active">
-            <video loop autoplay muted width="100%" playsinline>
-                <source src="img/santafe-m.mp4" type="video/mp4">
-            </video>
-            <h2 class="caption">   
-                <span class="category ">여행</span>
-                <p>Open for More: 또 다른 일상의 경험을 열다, 디 올 뉴 싼타페 (The all-new SANTA FE)</p>
-            </h2>
-          </div>
-          <div class="carousel-item">
-            <video loop autoplay muted width="100%" playsinline>
-                <source src="img/pony-m.mp4" type="video/mp4">
-            </video>
-            <h2 class="caption">   
-                <span class="category ">헤리티지 스토리</span>
-                <p>현대 리유니온이 공개한 포니 쿠페 콘셉트 복원 프로젝트</p>
-            </h2>
-          </div>
-          <div class="carousel-item">
-            <video loop autoplay muted width="100%" playsinline>
-                <source src="img/worldcup-m.mp4" type="video/mp4">
-            </video>
-            <h2 class="caption">   
-                <span class="category ">스포츠</span>
-                <p>여자 축구의 역사와 2023 FIFA 여자 월드컵™</p>
-            </h2>
-          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <video loop autoplay muted>
+                    <source src="img/santafe-m.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <span class="category ">여행</span>
+                    <p>Open for More: 또 다른 일상의 경험을 열다, 디 올 뉴 싼타페 (The all-new SANTA FE)</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video loop autoplay muted>
+                    <source src="img/pony-m.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <span class="category">헤리티지 스토리</span>
+                    <p>현대 리유니온이 공개한 포니 쿠페 콘셉트 복원 프로젝트</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <video loop autoplay muted>
+                    <source src="img/worldcup-m.mp4" type="video/mp4">
+                </video>
+                <div class="caption">
+                    <span class="category ">스포츠</span>
+                    <p>여자 축구의 역사와 2023 FIFA 여자 월드컵™</p>
+                </div>
+            </div>
         </div>
-      
+        
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo2" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
+            <span class="carousel-control-prev-icon"></span>
         </a>
         <a class="carousel-control-next" href="#demo2" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
+            <span class="carousel-control-next-icon"></span>
         </a>
-      
     </div>
-    <!-- 캐러셀 mobile.end -->
 
-    <!-- 컨텐츠박스 ------------------------------------------------------------>
+    <!-- 캐러셀m .end--------------->
+    <!-- 컨텐츠박스------------------------------------------------ -->
     <article>
         <img src="img/article01.jpg" alt="ioniq5" width="100%" height="100%">
+        <img src="img/article01-m.jpg" alt="ioniq5" width="100%" height="100%">
     </article>
     <article>
-        <img src="img/article02.jpg" alt="현대차그룹싱가포르" width="100%" height="100%">
+        <img src="img/article02.jpg" alt="싱가포르에 심은 혁신씨앗" width="100%" height="100%">
+        <img src="img/article02-m.jpg" alt="싱가포르에 심은 혁신씨앗" width="100%" height="100%">
     </article>
     <article>
-        <img src="img/article03.jpg" alt="헤리티지스토리" width="100%" height="100%">
+        <img src="img/article03.jpg" alt="헤리티지 스토리" width="100%" height="100%">
+        <img src="img/article03-m.jpg" alt="헤리티지 스토리" width="100%" height="100%">
     </article>
     <article>
         <h1>#아이오닉6</h1>
@@ -176,29 +169,33 @@
         <img src="img/article05-m.jpg" alt="고성능N" width="100%" height="100%">
     </article>
     <article>
-        <img src="img/article06.jpg" alt="디자인" width="100%" height="100%">
+        <img src="img/article06.jpg" alt="한픽셀씩 미래" width="100%" height="100%">
+        <img src="img/article06-m.jpg" alt="한픽셀씩 미래" width="100%" height="100%">
     </article>
     <article>
         <h1>#모터스포츠</h1>
     </article>
     <article>
-        <img src="img/article08.jpg" alt="디자인" width="100%" height="100%">
+        <img src="img/article08.jpg" alt="롤링 랩" width="100%" height="100%">
+        <img src="img/article08-m.jpg" alt="롤링 랩" width="100%" height="100%">
     </article>
     <article>
-        <img src="img/article09.jpg" alt="친환경라이프스타일" width="100%" height="100%">
+        <img src="img/article09.jpg" alt="친환경 라이프 스타일" width="100%" height="100%">
+        <img src="img/article09-m.jpg" alt="친환경 라이프 스타일" width="100%" height="100%">
     </article>
     <article>
-        <h1>#Art + Technology</h1>
+        <h1 style="font-size:20px;">#Art + Technology</h1>
     </article>
     <article>
-        <img src="img/article11.jpg" alt="친환경라이프스타일" width="100%" height="100%">
+        <img src="img/article11.jpg" alt="지속가능한 액티비티" width="100%" height="100%">
+        <img src="img/article11-m.jpg" alt="지속가능한 액티비티" width="100%" height="100%">
     </article>
-    <!-- 컨텐츠박스.end -->
+    <!-- 컨텐츠박스.end---- -->
 
-    <!-- footer pc ------------------------------------------------------------->
+    <!-- footer pc-------------------------------------------------- -->
     <footer id="footer-pc">
         <div class="container">
-            <div class="row" style="padding-top: 100px !important;">
+            <div class="row">
                 <div class="col-md-3">
                     <h4>문의/법적고지</h4>
                     <ul>
@@ -221,119 +218,98 @@
                     <h4>관련 사이트</h4>
                     <ul>
                         <li>N</li>
-                        <li>현대 모터 스튜디오</li>
+                        <li>현대 모터스튜디오</li>
                         <li>현대 컬렉션</li>
                         <li>현대 아트랩</li>
-                        <li>현대 NTF</li>
+                        <li>현대 NFT</li>
                         <li>현대 키즈 모터쇼</li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <h4>Hyundai Social Media</h4>
+                    <h4>Hyndai Social Media</h4>
                     <ul>
                         <li>Worldwide</li>
                         <li>
-                            <i class="fa-brands fa-square-facebook"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-square-youtube"></i>
-                            <i class="fa-brands fa-square-x-twitter"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                            <i class="fa-brands fa-x-twitter"></i>
                         </li>
-                       
                     </ul>
                 </div>
             </div>
             <div id="copyright">
-                &copy; 2023 Hyundai Motor Company
+                &copy 
             </div>
         </div>
     </footer>
-    <!-- footer pc.end -->
+    <!-- footer pc.end ----------->
 
-    <!-- footer mobile ------------------------------------------------------------->
+    <!-- footer mobile---------------------------------------------------- -->
     <footer id="footer-mobile">
-        <div id="accordion" style="padding-top: 50px !important;>
+        <div id="accordion">
             <div class="card">
-              <div class="card-header">
-                <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                    <h4>문의/법적고지</h4>
-                </a>
-              </div>
-              <div id="collapseOne" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>법적고지</li>
-                        <li>개인정보 처리방침</li>
-                        <li>쿠키정책</li>
-                        <li>사이트맵</li>
-                    </ul>
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    문의/법적고지
+                    </a>
                 </div>
-              </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">법적고지</div>
+                    <div class="card-body">개인정보 처리방침</div>
+                    <div class="card-body">쿠키정책</div>
+                    <div class="card-body">사이트맵</div>
+                </div>
             </div>
-          
+        
             <div class="card">
-              <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                    <h4>기업소개</h4>
-                </a>
-              </div>
-              <div id="collapseTwo" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>모델 히스토리</li>
-                        <li>사업망</li>
-                        <li>관계사</li>
-                        <li>협력업체</li>
-                    </ul>
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        기업소개
+                    </a>
                 </div>
-              </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">모델 히스토리</div>
+                    <div class="card-body">사업망</div>
+                    <div class="card-body">관계사</div>
+                    <div class="card-body">협력업체</div>
+                </div>
+            </div>
+        
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        관련사이트
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">N</div>
+                    <div class="card-body">현대 모터스튜디오</div>
+                    <div class="card-body">현대 컬렉션</div>
+                    <div class="card-body">현대 아트랩</div>
+                    <div class="card-body">현대 NFT</div>
+                    <div class="card-body">현대 키즈 모터쇼</div>
+                </div>
             </div>
 
             <div class="card">
                 <div class="card-header">
-                  <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                      <h4>관련 사이트</h4>
-                  </a>
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
+                        Hyundai Social Media
+                    </a>
                 </div>
-                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">Worldwide</div>
                     <div class="card-body">
-                        <ul>
-                            <li>N</li>
-                            <li>현대 모터 스튜디오</li>
-                            <li>현대 컬렉션</li>
-                            <li>현대 아트랩</li>
-                            <li>현대 NTF</li>
-                            <li>현대 키즈 모터쇼</li>
-                        </ul>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
                     </div>
                 </div>
-              </div>
-          
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed card-link" data-toggle="collapse" href="#collapseFour">
-                    <h4>Hyundai Social Media</h4>
-                </a>
-              </div>
-              <div id="collapseFour" class="collapse" data-parent="#accordion">
-                <div class="card-body">
-                    <ul>
-                        <li>Worldwide</li>
-                        <li>
-                            <i class="fa-brands fa-square-facebook"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
-                            <i class="fa-brands fa-square-youtube"></i>
-                            <i class="fa-brands fa-square-x-twitter"></i>
-                        </li>                       
-                    </ul>
-                </div>
-              </div>
-            </div>
-          
-            <div id="copyright-mobile" style="padding-top: 20px;">
-                &copy; 2023 Hyundai Motor Company
             </div>
         </div>
     </footer>
-    <!-- footer mobile.end -->
+    <!-- footer mobile.end ---------->
 </body>
 </html>
